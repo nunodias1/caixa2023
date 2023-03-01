@@ -4,13 +4,17 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("******");
+		printTopOrBottom();
 		System.out.println("*    *");
 		System.out.println("*    *");
 		System.out.println("*    *");
 		System.out.println("*    *");
-		System.out.println("******");
+		printTopOrBottom();
 		
 	}
 
+	public static void printTopOrBottom() {
+		System.out.println("*******");
+	}
+	
 }
