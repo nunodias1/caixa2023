@@ -4,11 +4,12 @@ public class Caixa {
 
 	private int width;
 	private int height;
+	private String character;
 	
-	public Caixa (int widthParam, int heightParam) {
+	public Caixa (int widthParam, int heightParam, String characterParam) {
 		width = widthParam;
 		height = heightParam;
-		
+		character = characterParam;
 	}
 	
 public void print() {
@@ -25,18 +26,18 @@ public void print() {
 
 private void printTopOrBottom() {
 	for (int i = 0; i < width; i++) {
-		System.out.print("*");
+		System.out.print(character);
 	}
 		System.out.println();
 }
 
 private void printLeftAndRight () {
 	for (int i = 0; i < height - 2; i++) {
-		System.out.print("*");
+		System.out.print(character);
 		for (int j = 0; j < width - 2; j++) {
 			System.out.print(" ");
 		}
-		System.out.println("*");
+		System.out.println(character);
 	}
 
 }
